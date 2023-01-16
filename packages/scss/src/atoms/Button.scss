@@ -1,0 +1,9 @@
+@import "foundation/all";
+
+.gxs-button__container {
+  display: flex;
+  color: $btn-primary-color;
+  border: none;
+  background-color: $btn-primary-bg;
+  padding: 10px;
+}

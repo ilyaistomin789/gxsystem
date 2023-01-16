@@ -1,0 +1,74 @@
+@import "foundation/all";
+
+.gxs-select {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: map-get($spacing, 'xs');
+    border: 1px solid $white-dark;
+    background-color: $white;
+    font-family: $body-font-family;
+    cursor: pointer;
+  }
+
+  &__overlay {
+    @include padding('none');
+    @include margin('none');
+
+    border: 1px solid $form-border-color;
+    background-color: $form-bg-color;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+
+    box-shadow: map-get($shadows, 'base');
+  }
+
+  &__chevron {
+    display: flex;
+    width: 15px;
+    height: 15px;
+
+    transition: all 250ms ease;
+
+    &--open {
+      transform: rotate(180deg)
+    }
+
+    &--close {
+      transform: rotate(0)
+    }
+
+    @include svgSize();
+  }
+
+  &__option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    @include padding('xs');
+
+    &--selected {
+      background-color: $form-bg-option-selected;
+      color: $form-color-option-selected;
+    }
+
+    &--highlighted {
+      background-color: $form-bg-color-hover;
+    }
+  }
+
+  &__checked {
+    width: 15px;
+    height: 15px;
+  }
+}

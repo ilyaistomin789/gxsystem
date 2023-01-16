@@ -1,0 +1,11 @@
+@import "foundation/all";
+
+@each $size, $value in $spacing {
+  .gxs-width-#{$size} {
+    width: $value;
+  }
+
+  .gxs-height-#{$size} {
+    height: $value;
+  }
+}
