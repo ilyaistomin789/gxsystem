@@ -10,14 +10,14 @@ import '@gxsys/scss/lib/Select.css'
 import '@gxsys/scss/lib/global.css'
 
 const options = [{
-    label: 'Strict Black',
-    value: 'strict-black'
+    label: 'Black',
+    value: 'black'
 }, {
-    label: 'Heavenly Green',
-    value: 'heavenly-green'
+    label: 'White',
+    value: 'white'
 }, {
-    label: 'Sweet Pink',
-    value: 'pink'
+    label: 'Green',
+    value: 'green'
 }]
 
 ReactDOM.render(

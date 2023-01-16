@@ -162,6 +162,7 @@ const Select: React.FunctionComponent<SelectProps> = ({
         aria-haspopup={true}
         aria-expanded={isOpen ? true : undefined}
         aria-controls="gxsys-select-list"
+        data-testid="GxsSelectButton"
       >
         <Text>{selectedIndex ? selectedOption?.label : label}</Text>
         <span
