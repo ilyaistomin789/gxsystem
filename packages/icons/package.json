@@ -17,5 +17,6 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "yarn build --watch"
-  }
+  },
+  "gitHead": "af4f8838e886d6dc990f4a15f00cf571452774e1"
 }
