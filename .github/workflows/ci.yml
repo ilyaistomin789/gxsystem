@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  gxsys:build:
+  gxsys-build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -19,6 +19,6 @@ jobs:
 
       - name: Build
         run: yarn build
-        
+
       - name: Test
         run: yarn test
