@@ -1,6 +1,6 @@
 {
   "name": "@gxsys/react",
-  "version": "0.1.3",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "license": "MIT",
   "files": [
