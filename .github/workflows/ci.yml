@@ -25,3 +25,8 @@ jobs:
 
       - name: Test
         run: yarn test
+
+      - name: Chromatic
+        env:
+          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+        run: yarn test:chromatic
